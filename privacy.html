@@ -4,111 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - HoF HiveLink Bot</title>
-    <link rel="icon" type="image/x-icon" href="assets/hivehof.ico">
+        <link rel="icon" type="image/x-icon" href="https://hivehof.com/assets/hivehof.ico">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        :root {
-            --primary: #903fb7;
-            --secondary: #3d125d;
-        }
         body {
-            background-color: #0f0f0f;
+            background: linear-gradient(to bottom right, #0f0f0f, #1a1824, #0f0f0f);
             color: #e5e5e5;
+            min-height: 100vh;
         }
-        .bg-custom-card {
-            background-color: #1a1a1a;
+        
+        .glass-card {
+            background: rgba(26, 24, 36, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(144, 63, 183, 0.1);
         }
+        
+        .hover-card {
+            transition: all 0.2s ease;
+        }
+        
+        .hover-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(144, 63, 183, 0.15);
+        }
+        
+        .accent-border {
+            border: 1px solid rgba(144, 63, 183, 0.15);
+        }
+
+        .dot-pattern {
+            background-image: radial-gradient(rgba(144, 63, 183, 0.1) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+
         .highlight {
-            color: var(--primary);
-        }
-        .border-highlight {
-            border-color: var(--primary);
+            background: linear-gradient(120deg, rgba(144, 63, 183, 0.1), rgba(144, 63, 183, 0.05));
         }
     </style>
 </head>
-<body class="min-h-screen">
-    <nav class="border-b border-gray-800 bg-black">
-        <div class="max-w-5xl mx-auto px-4 py-4">
-            <div class="flex items-center space-x-4">
-                <img src="assets/hivehof.png" alt="HoF Logo" class="h-10 w-10">
-                <span class="text-xl font-bold highlight">HoF HiveLink</span>
+<body>
+    <div class="dot-pattern fixed inset-0 opacity-30"></div>
+
+    <nav class="glass-card sticky top-0 z-50 border-b border-purple-500/10">
+        <div class="max-w-5xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="p-1 bg-gradient-to-br from-purple-500/10 to-purple-500/5 rounded-lg">
+                        <img src="assets/hivehof.png" alt="HoF Logo" class="h-10 w-10">
+                    </div>
+                    <div>
+                        <span class="text-xl font-semibold text-white">HoF HiveLink</span>
+                        <p class="text-sm text-purple-200/60">Privacy Policy</p>
+                    </div>
+                </div>
+                <a href="https://discord.gg/ARnWnJSEYT" 
+                   class="px-5 py-2 rounded-md bg-[#903fb7] hover:bg-[#8037a3] transition-all duration-200 text-white text-sm font-medium shadow-lg shadow-purple-500/20">
+                    Join Discord
+                </a>
             </div>
         </div>
     </nav>
 
-    <main class="max-w-4xl mx-auto px-4 py-12">
-        <div class="bg-custom-card rounded-xl shadow-2xl p-8 mb-8">
-            <h1 class="text-3xl font-bold mb-8 highlight">Privacy Policy</h1>
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <div class="glass-card rounded-xl shadow-xl p-8 mb-8">
+            <h1 class="text-3xl font-bold mb-10 bg-gradient-to-r from-white to-purple-100 bg-clip-text text-transparent">Privacy Policy</h1>
             
-            <section class="mb-10">
-                <h2 class="text-2xl font-semibold mb-4 text-white">Information We Collect</h2>
-                <div class="space-y-3 text-gray-300">
-                    <p>We collect and store the following information:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Discord user ID and associated server roles</li>
-                        <li>Xbox Live gamertag (when connected)</li>
-                        <li>Hive statistics and achievement data</li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+                <div class="hover-card bg-[#1a1824] p-6 rounded-lg accent-border">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-xl">
+                            📊
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-white mb-3">Information Collection</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Discord user ID and roles</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Xbox Live gamertag</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Hive statistics & achievements</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
 
-            <section class="mb-10">
-                <h2 class="text-2xl font-semibold mb-4 text-white">How We Use Your Information</h2>
-                <div class="space-y-3 text-gray-300">
-                    <p>Your information is used exclusively for:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Linking your Discord and Xbox Live accounts</li>
-                        <li>Automatic role assignment based on your Hive achievements and statistics</li>
-                        <li>Synchronizing your Discord nickname with your gamertag</li>
-                        <li>Processing verification requests</li>
-                    </ul>
+                <div class="hover-card bg-[#1a1824] p-6 rounded-lg accent-border">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-xl">
+                            🔄
+                        </div>
+                        <div>
+                            <h2 class="text-lg font-semibold text-white mb-3">Data Usage</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Account linking & verification</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Role assignment</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+                                    <span>Nickname synchronization</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="mb-10">
-                <h2 class="text-2xl font-semibold mb-4 text-white">Data Storage & Security</h2>
-                <div class="space-y-3 text-gray-300">
-                    <p>We prioritize the security of your data:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>All data is stored securely and not shared with third parties</li>
-                        <li>Data is automatically removed when you use the /disconnect command</li>
-                        <li>We implement rate limiting and other security measures to protect against abuse</li>
-                        <li>We only store the minimum information necessary for the bot to function</li>
-                    </ul>
+            <div class="hover-card bg-[#1a1824] p-6 rounded-lg mb-8 accent-border">
+                <div class="flex items-start space-x-4 mb-6">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 flex items-center justify-center text-xl">
+                        🛡️
+                    </div>
+                    <div class="flex-1">
+                        <h2 class="text-lg font-semibold text-white mb-1">Security & Privacy</h2>
+                        <p class="text-gray-400 text-sm">How we protect your data</p>
+                    </div>
                 </div>
-            </section>
-
-            <section class="mb-10">
-                <h2 class="text-2xl font-semibold mb-4 text-white">Your Rights</h2>
-                <div class="space-y-3 text-gray-300">
-                    <p>You have the right to:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Request deletion of your data at any time</li>
-                        <li>Disconnect your account using the /disconnect command</li>
-                        <li>Request information about what data we store about you</li>
-                    </ul>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="highlight rounded-lg p-4">
+                        <h3 class="font-medium text-white mb-2">Data Storage</h3>
+                        <p class="text-gray-300 text-sm">Your data is stored securely and never shared with third parties. We use industry-standard security measures to protect your information.</p>
+                    </div>
+                    <div class="highlight rounded-lg p-4">
+                        <h3 class="font-medium text-white mb-2">Data Control</h3>
+                        <p class="text-gray-300 text-sm">You have full control over your data. Use /disconnect to remove all stored information about your account at any time.</p>
+                    </div>
                 </div>
-            </section>
+            </div>
 
-            <section class="mb-10">
-                <h2 class="text-2xl font-semibold mb-4 text-white">Contact</h2>
-                <div class="space-y-3 text-gray-300">
-                    <p>For any privacy-related concerns or questions, you can:</p>
-                    <ul class="list-disc pl-6 space-y-2">
-                        <li>Join our <a href="https://discord.gg/ARnWnJSEYT" class="highlight hover:underline">Discord server</a></li>
-                        <li>Contact our moderators through Discord</li>
-                    </ul>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <div class="hover-card bg-[#1a1824] p-4 rounded-lg accent-border">
+                    <h3 class="font-medium text-white mb-2">Access Rights</h3>
+                    <p class="text-gray-300 text-sm">Request your stored data information at any time</p>
                 </div>
-            </section>
+                <div class="hover-card bg-[#1a1824] p-4 rounded-lg accent-border">
+                    <h3 class="font-medium text-white mb-2">Permissions</h3>
+                    <p class="text-gray-300 text-sm">Manage your connected accounts and roles</p>
+                </div>
+                <div class="hover-card bg-[#1a1824] p-4 rounded-lg accent-border">
+                    <h3 class="font-medium text-white mb-2">Removal</h3>
+                    <p class="text-gray-300 text-sm">Remove all your data with a single command</p>
+                </div>
+            </div>
 
-            <section class="pt-6 border-t border-gray-800">
-                <p class="text-gray-400 text-sm">This bot is not affiliated with Hive Games or Minecraft. It is an independent community project.</p>
-            </section>
+            <div class="bg-[#1a1824] rounded-lg p-6 accent-border">
+                <h2 class="text-lg font-semibold text-white mb-4">Contact Us</h2>
+                <div class="space-y-4 text-gray-300">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-sm">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-4h2v2h-2v-2zm0-2h2V7h-2v7z"/>
+                            </svg>
+                        </div>
+                        <p>Contact <code class="px-2 py-1 bg-purple-500/10 rounded text-sm">jqms</code> on Discord</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-purple-500/10 flex items-center justify-center text-sm">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                            </svg>
+                        </div>
+                        <a href="https://discord.gg/ARnWnJSEYT" class="text-purple-400 hover:underline">Join our Discord server</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-800/50 text-sm text-gray-400">
+                <p>This bot is not affiliated with Hive Games or Minecraft. It is an independent community project.</p>
+            </div>
         </div>
     </main>
 
     <footer class="text-center py-6 text-gray-500 text-sm">
-        <p>© 2025 HoF HiveLink Bot • Not affiliated with Hive Games or Minecraft</p>
+        <p>© 2025 HoF HiveLink Bot</p>
     </footer>
 </body>
 </html>
